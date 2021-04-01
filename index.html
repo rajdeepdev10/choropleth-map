@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1048">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://unpkg.com/topojson@3.0.2/dist/topojson.js"></script> <!--topojson converter library-->
+    <title>Education Attainment in US</title>
+</head>
+<body>
+    <div id="tooltip"></div>
+
+    <h1 id="title">Education Attainment in the United States</h1>
+    <p id="description">Percentage of adults age 25 and older with a bachelor's degree or higher </p>
+
+    <div id="svg-container">
+        <svg id="canvas"></svg>
+
+        <svg id="legend">
+            <!-- text is hard coded -->
+            <text x="30" y="30" class="legend-font">&#8804; 15%</text>
+            <text x="30" y="70" class="legend-font">&#8804; 20%</text>
+            <text x="30" y="110" class="legend-font">&#8804; 25%</text>
+            <text x="30" y="145" class="legend-font">&#62; 25%</text>
+        </svg>
+    </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
